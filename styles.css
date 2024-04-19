@@ -1,0 +1,149 @@
+.style div {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: dimgray;
+  margin: 6px 0;
+}
+
+.style {
+  margin-top: -3.1em;
+}
+
+header {
+  background: aliceblue;
+}
+
+.card {
+  background: #fff;
+  border-color: #f2f2f2;
+  margin: 2em;
+  display: grid;
+  place-content: center;
+  opacity: 0;
+}
+
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fade 1s backwards;
+}
+
+@keyframes fade {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    background: #fff;
+    border-color: #f2f2f2;
+    margin: 2em;
+    display: grid;
+    place-content: center;
+    opacity: 0;
+  }
+
+  .card.visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: slideIn 0.5s backwards;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+
+    to {
+      transform: translateX(0);
+    }
+  }
+}
+
+body {
+  background: #f2f2f2;
+}
+
+.card-img-top {
+  width: 19.3em;
+  max-width: 1200px;
+}
+
+header img {
+  width: 67px;
+  height: 70px;
+  border-radius: 80px;
+}
+
+.image-sub {
+  width: 37px;
+  height: 40px;
+  border-radius: 60px;
+}
+
+footer {
+  position: absolute;
+}
+
+.image-las {
+  width: 139px;
+  height: 145px;
+  border-radius: 80px;
+  display: block;
+  margin: 0 auto;
+}
+
+.copyright {
+  margin-top: 1em;
+  margin-bottom: -1.3em;
+}
+
+.an {
+  animation: fade 3s forwards;
+}
+
+@keyframes fade {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .stone {
+    display: block;
+  }
+
+  .bgcolor {
+    background: lightblue;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .stone {
+    display: none;
+  }
+}
+
+.stone {
+  float: right;
+}
+
+@media screen and (min-width: 768px) {
+  .lil {
+    height: 16.2em;
+  }
+}

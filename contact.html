@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .card {
+      background: #fff;
+      border-color: #f2f2f2;
+      margin: 2em;
+      display: grid;
+      place-content: center;
+      opacity: 0;
+    }
+
+    .card.visible {
+      opacity: 1;
+      transform: translateY(0);
+      animation: fade 0.5s backwards;
+    }
+
+    @keyframes fade {
+      from {
+        transform: translateY(60px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="bgcolor">
+      <img class="mt-2 ms-2 mb-md-2" src="/images/logo.jpg" alt="logo">
+      <div class="stone mt-4 px-4">
+        <a style="text-decoration: none;  color: black; font-size: 1.7em" href="index.html"
+          class="px-3 fw-bold lead">Home</a>
+        <a style="text-decoration: none; color: black; font-size: 1.7em" href="#about"
+          class="px-4 me-2 fw-bold lead">About</a>
+        <a style="text-decoration: none; color: black; font-size: 1.7em" href="contact.html"
+          class="fw-bold lead">Contact</a>
+      </div>
+    </div>
+    <div class="float-end me-3 d-md-none style" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+      aria-controls="offcanvasTop" data-bs-hide="true">
+
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasTopLabel">
+          <img class="image-sub" src="/images/logo.jpg" alt="logo"> Reubeez
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-house-door" viewBox="0 0 16 16">
+                <path
+                  d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z" />
+              </svg> Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-half"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+              </svg> About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-file-person-fill" viewBox="0 0 16 16">
+                <path
+                  d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11" />
+              </svg> Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <br><br><br>
+    <h1 class="display-3 fw-bold text-center text-primary" id="head"></h1>
+  </header>
+  <br><br>
+  <div class="container">
+    <div class="row container">
+
+
+      <div class="card mb-3 rounded-5 py-5 px-3 mx-3">
+        <a class="nav-link" href="https://wa.me/+2348142840030">
+          <div class="card-body">
+            <h5 class="card-title fw-bold display-4">
+              <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green"
+                class="bi bi-whatsapp" viewBox="0 0 16 16">
+                <path
+                  d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+              </svg> Chat with us
+            </h5>
+            <p class="card-text ms-5">Send us a message on WhatsApp & we'll be sure to get right back</p>
+          </div>
+        </a>
+      </div>
+
+
+
+
+      <div class="card mb-3 rounded-5 py-5 px-3 mx-3">
+        <a href="mailto: ekong2464@gmail.com" class="nav-link">
+          <div class="card-body">
+            <h5 class="card-title display-4 fw-bold">
+              <svg class="me-3" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="darkred"
+                class="bi bi-envelope-plus-fill" viewBox="0 0 16 16">
+                <path
+                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z" />
+                <path
+                  d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5" />
+              </svg> Email us
+            </h5>
+            <p class="card-text ms-5">
+              Contact us for more information by sending us a mail</p>
+          </div>
+        </a>
+      </div>
+
+
+
+      <div class="card mb-5 rounded-5 py-5 px-3 mx-3">
+        <a class="nav-link" href="tel: +2348142840030">
+          <div class="card-body">
+            <h5 class="display-4 fw-bold card-title">
+              <svg class="me-3" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="blue"
+                class="bi bi-telephone-plus-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM12.5 1a.5.5 0 0 1 .5.5V3h1.5a.5.5 0 0 1 0 1H13v1.5a.5.5 0 0 1-1 0V4h-1.5a.5.5 0 0 1 0-1H12V1.5a.5.5 0 0 1 .5-.5" />
+              </svg> Place a call
+            </h5>
+            <p class="card-text ms-5">
+              For more enquiry you can also place a call to reach out to our teams</p>
+          </div>
+        </a>
+      </div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+  <footer class="text-light bg-secondary px-3 mt-1">
+
+    <img class="image-las my-5" src="/images/logo.jpg" alt="logo">
+
+    <section id="about">
+      <h1 class="fw-bold display-5">
+        About Us
+        <svg class="mb-2" xmlns="http://www.w3.org/2000/svg" width="30" height="26" fill="currentColor"
+          class="bi bi-stars" viewBox="0 0 16 16">
+          <path
+            d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+        </svg>
+      </h1>
+      <div class="mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+          viewBox="0 0 16 16">
+          <path
+            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+          viewBox="0 0 16 16">
+          <path
+            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+          viewBox="0 0 16 16">
+          <path
+            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+          viewBox="0 0 16 16">
+          <path
+            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+          viewBox="0 0 16 16">
+          <path
+            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+      </div>
+      <p class="lead mb-5">As the premier purveyor of high-quality fenugreek products, Reubeez is not merely a retailer,
+        but a champion of health, well-being, and the ancient wisdom of natural remedies. With roots as deep and robust
+        as the fenugreek plant itself, our mission is to kindle a renewed appreciation for this versatile spice, its
+        time-honored use, and its myriad of potential health benefits.<br>
+        Indeed, Reubeez's journey is a testament to the enduring power of nature and its timeless secrets. <br>Our
+        unwavering commitment to the holistic wellness of our customers is a manifestation of our belief that true
+        health is not confined to a pill or a fad, but rather blossoms from the harmonious union of body, mind, and
+        soul.
+        <br>Our finely curated selection of fenugreek products is a culmination of years of research, traditional
+        knowledge, and a deep-rooted understanding of the healing potential of this ancient spice.
+      </p>
+
+      <span class="fw-bold copyright">
+        <marquee>© 2024. Reubeez - All Rights Reserved. Powered by Ese...</marquee>
+      </span>
+    </section>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script>
+    function writeT(test) {
+      let index = 0;
+
+      function writeNextL() {
+        if (index < test.length) {
+          document.getElementById("head").innerHTML += test.charAt(index);
+          index++;
+        } else {
+          clearInterval(interval);
+        }
+      }
+
+      let interval = setInterval(writeNextL, 100);
+
+    }
+
+    writeT('HOW CAN WE HELP?');
+
+    function isElementInViewport(el) {
+      let rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    let cards = document.querySelectorAll('.card');
+
+    function checkCards() {
+      cards.forEach(function (card) {
+        if (isElementInViewport(card)) {
+          card.classList.add('visible');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', checkCards);
+    window.addEventListener('resize', checkCards);
+    window.addEventListener('load', checkCards);
+  </script>
+
+</body>
+
+</html>
