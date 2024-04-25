@@ -141,12 +141,4 @@
      width: 28em;
    }
    
-@media (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-  .reps{
-     width: 23em;
-     padding: 0;
-     margin-left: -5px;
-    
-      }
-}
 
