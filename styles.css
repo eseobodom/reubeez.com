@@ -135,19 +135,18 @@
  .porb{
    display: none;
  }
- @media screen and (min-width: 824px)
+ @media screen and (min-width: 1024px)
  {
    .reps{
-     width: 27em;
-    
+     width: 28em;
    }
- }
- @media screen and (min-width: 325px)
- {
-   .reps{
+   
+@media (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .reps{
      width: 23em;
      padding: 0;
      margin-left: -5px;
     
-   }
-   }
+      }
+}
+
