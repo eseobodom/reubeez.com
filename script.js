@@ -15,7 +15,7 @@ let interval = setInterval(writeNextLetter, 100);
 
 }
 
-writeText('HEY! WELCOME TO REUBEEZ... God'spower');
+writeText('HEY! WELCOME TO REUBEEZ... Godspower');
 
 
 function isElementInViewport(el) {
