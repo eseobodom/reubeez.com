@@ -158,7 +158,7 @@
    }
    @media screen and (min-width: 1366px){
      .cars{
-       padding-left: -7%;
+       padding-left: -7em;
    }
    
 
