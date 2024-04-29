@@ -140,5 +140,10 @@
    .reps{
      width: 28em;
    }
+   @media screen and (min-width: 1024px){
+     .card-text{
+       margin-left: 2em;
+       font-size: 3em;
+   }
    
 
