@@ -142,8 +142,8 @@
    }
    @media screen and (min-width: 1024px){
      .card-text{
-       margin-left: 2em;
-       line-height: 1.7em;
+       margin-right: -1em;
+       line-height: 2.2em;
    }
    
 
