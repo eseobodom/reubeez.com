@@ -138,12 +138,10 @@
  @media screen and (min-width: 1024px)
  {
    .reps{
-     width: 28em;
+     width: 24em;
    }
    @media screen and (min-width: 1024px){
      .card-text{
-       margin-right: -3em;
-       margin-left: 0.5em;
        line-height: 3em;
    }
    
