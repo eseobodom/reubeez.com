@@ -152,9 +152,13 @@
      }
    @media screen and (min-width: 1366px){
      .sp{
-       margin-left: -5em;
+       margin-left: -10em;
        width: 28em;
        float: left;
+       display: flex;
+       justify-content: left;
+       
+       
      }
    }
    
