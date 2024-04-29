@@ -150,12 +150,6 @@
          width: 28em;
        }
      }
-   @media screen and (min-width: 1366px){
-     .sp{
-       width: 100%
-       float: left;
-       padding-left: 0px;
-     }
-   }
+   
    
 
