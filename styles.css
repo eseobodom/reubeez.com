@@ -135,7 +135,7 @@
  .porb{
    display: none;
  }
- @media screen and (min-width: 1024px)
+ /*@media screen and (min-width: 1024px)
  {
    .reps{
      width: 24em;
@@ -149,7 +149,7 @@
        .reps{
          width: 28em;
        }
-     }
+     }*/
    .favicon{
      border-radius: 50%;
    .reps{
