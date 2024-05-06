@@ -42,10 +42,3 @@ window.addEventListener('scroll', checkCards);
 window.addEventListener('resize', checkCards);
 window.addEventListener('load', checkCards);
 
-  
-    function replaceContent() {
- let contentDiv = document.getElementById("content");
-      contentDiv.innerHTML = "<h1>If you really love and like our website and you really want to produceal a website like this you could contact Ese IT </h1>";
-    }
-    replaceContent();
-
